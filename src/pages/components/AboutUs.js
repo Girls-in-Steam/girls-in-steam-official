@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import map1 from "./../images/map1.png";
+import hqmap from "./../images/hqmap.svg";  
 import steambbt from "./../images/steambbt.png";
 import "./../styles/AboutUs.css";
 import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
@@ -85,7 +85,7 @@ export default function AboutUs() {
         >
           The Girls in STEAM team is based all across the world!
         </Typography>
-        <img src={map1} alt="Map" style={{ width: "70%", height: "auto" }} />
+        <img src={hqmap} alt="Map" style={{ width: "50%", height: "auto" }} />
       </Grid>
     </Grid>
   );
