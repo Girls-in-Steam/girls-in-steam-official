@@ -6,6 +6,7 @@ import "./../fonts/JosefinSans-VariableFont_wght.ttf"
 import OurValues from './components/OurValues.js';
 import TheTeam from "./components/TheTeam.js";
 import Hero from "./components/Hero.js";
+import Events from "./components/Events";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <OurValues />
           <TheTeam />
         </div>
+        <Events />
       </header>
       <Footer />
     </div>
