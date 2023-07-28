@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <Grid container spacing={2} className="container">
       <Grid item xs={12} sm={6}>
-        <div sx={{ maxWidth: 400 }}>
+        <div sx={{ maxWidth: 400}}>
           <Typography
             variant="h4"
             gutterBottom

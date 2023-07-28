@@ -1,6 +1,6 @@
 .container {
   background-color: white;
-  padding: 20px;
+  padding: 100px;
   display: flex;  
   flex-wrap: wrap;  
 }
