@@ -29,9 +29,16 @@
 @media (max-width: 600px) {
   .events-container {
     align-items: center;
+    padding-left: 20px; 
+  }
+
+  .events {
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .shadow-rectangle-events {
-    width: 80%;
+    width: 80%; 
+    margin: 0 auto; 
   }
 }
