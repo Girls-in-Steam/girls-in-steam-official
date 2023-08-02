@@ -5,10 +5,11 @@
 }
 
 .events {
-  flex-direction: row;  
+  flex-direction: row;
   align-items: center;
   flex: 1;
   display: flex;
+  justify-content: space-between;
 }
 
 .shadow-rectangle-events {
@@ -29,17 +30,44 @@
 @media (max-width: 600px) {
   .events-container {
     align-items: center;
-    padding-left: 20px; 
+    padding-left: 20px;
   }
 
   .events {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .shadow-rectangle-events {
-    width: 80%; 
-    margin: 0 auto; 
+    width: 80%;
+    margin: 0 auto;
     padding-bottom: 100px;
   }
 }
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.alice-carousel__prev-btn img,
+.alice-carousel__next-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+ 
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1000px; /* Adjust the maximum width of the carousel */
+  margin: 0 auto;
+  position: relative;
+}
+
+ 
