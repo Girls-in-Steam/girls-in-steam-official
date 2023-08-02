@@ -111,9 +111,7 @@
 
 .carousel-wrapper {
   width: 100%;
-  max-width: 1000px; /* Adjust the maximum width of the carousel */
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
 }
-
- 

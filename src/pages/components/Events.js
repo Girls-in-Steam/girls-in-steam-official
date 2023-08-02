@@ -34,11 +34,13 @@ function EventCard({ event, onClick }) {
 // Events component
 export default function Events() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [showBackButton, setShowBackButton] = useState(false);
 
   const handleNextClick = () => {
     setActiveIndex((prevIndex) =>
       prevIndex < eventData.length - 3 ? prevIndex + 3 : prevIndex
     );
+    setShowBackButton(activeIndex !== 1);
   };
 
   const handlePrevClick = () => {
