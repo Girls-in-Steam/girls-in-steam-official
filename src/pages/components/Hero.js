@@ -3,10 +3,11 @@ import { Button } from "@mui/material";
 import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import white from './../images/white.png';
-import pink from './../images/pink.png';
-import lightPurple from './../images/light-purple.png';
-import darkPurple from './../images/dark-purple.png';
+import pilates from './../images/pilates.jpg';
+import facePainting from './../images/face_painting.jpg';
+import cmdf from './../images/cmd-f.jpg';
+import panel from './../images/panel.JPG';
+import panel_2 from './../images/panel_2.jpeg';
 import leftArrow from './../images/left-arrow.svg';
 import rightArrow from './../images/right-arrow.svg';
 
@@ -32,16 +33,21 @@ export default function Hero() {
                 <div className="carousel-column">
                     <div className="hero-carousel">
                     <AliceCarousel autoPlay autoPlayInterval="3000" infinite="true" disableDotsControls="true"
-                        renderPrevButton={() => {
+                        renderNextButton={() => {
                         return <img className="left" src={leftArrow} alt="left-arrow" />
                       }}
-                        renderNextButton={() => {
+                        renderPrevButton={() => {
                         return <img className="right" src={rightArrow} alt="right-arrow" />
                       }}>
-                        <img className="slide-image" src={lightPurple} alt="light-purple"/>
-                        <img className="slide-image" src={darkPurple} alt="dark-purple"/>
-                        <img className="slide-image" src={pink} alt="pink"/>
-                        <img className="slide-image" src={white} alt="white"/>
+
+                        {/* fix tests vv*/}
+
+                        <img className="slide-image" src={cmdf} alt="cmd-f"/>
+                        <img className="slide-image" src={panel} alt="panel"/>
+                        <img className="slide-image" src={pilates} alt="pilates"/>
+                        <img className="slide-image" src={facePainting} alt="face painting"/>
+                        <img className="slide-image" src={panel_2} alt="panel_2"/>
+
                     </AliceCarousel>
                     </div>
                 </div>
