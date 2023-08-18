@@ -17,16 +17,18 @@ test('renders Hero section', () => {
     const getInvolvedButton = screen.getByRole('button', {name: 'GET INVOLVED'});
     expect(getInvolvedButton).toBeInTheDocument();
 
-    // Change these tests later when placeholder images are replaced
-    const whiteImage = screen.getAllByAltText('white');
-    expect(whiteImage.length).toEqual(2);
+    const cmdfImage = screen.getAllByAltText('cmd-f');
+    expect(cmdfImage.length).toEqual(2);
 
-    const pinkImage = screen.getByAltText('pink');
-    expect(pinkImage).toBeInTheDocument();
+    const panelImage = screen.getByAltText('panel');
+    expect(panelImage).toBeInTheDocument();
 
-    const lightPurpleImage = screen.getAllByAltText('light-purple');
-    expect(lightPurpleImage.length).toEqual(2);
+    const pilatesImage = screen.getByAltText('pilates');
+    expect(pilatesImage).toBeInTheDocument();
 
-    const darkPurpleImage = screen.getByAltText('dark-purple');
-    expect(darkPurpleImage).toBeInTheDocument();
+    const facePaintingImage = screen.getByAltText('face painting');
+    expect(facePaintingImage).toBeInTheDocument();
+
+    const panel2Image = screen.getAllByAltText('panel_2');
+    expect(panel2Image.length).toEqual(2);
 });
