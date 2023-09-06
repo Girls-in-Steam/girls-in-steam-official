@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/girls-in-steam-official/static/css/main.c9f98938.css",
-    "main.js": "/girls-in-steam-official/static/js/main.ff2d32f0.js",
+    "main.js": "/girls-in-steam-official/static/js/main.80344214.js",
     "static/media/community.jpeg": "/girls-in-steam-official/static/media/community.bfd51f3b29c2266c42a6.jpeg",
     "static/media/access.jpeg": "/girls-in-steam-official/static/media/access.54366d6f99447dad9fc8.jpeg",
     "static/media/education.jpg": "/girls-in-steam-official/static/media/education.9201b13ab89194ffba20.jpg",
@@ -38,10 +38,10 @@
     "static/media/right-arrow.svg": "/girls-in-steam-official/static/media/right-arrow.95d8b94c7a09a43834b57b44f3945c08.svg",
     "static/media/left-arrow.svg": "/girls-in-steam-official/static/media/left-arrow.9bc9bb106484f7480829d67187c63aca.svg",
     "main.c9f98938.css.map": "/girls-in-steam-official/static/css/main.c9f98938.css.map",
-    "main.ff2d32f0.js.map": "/girls-in-steam-official/static/js/main.ff2d32f0.js.map"
+    "main.80344214.js.map": "/girls-in-steam-official/static/js/main.80344214.js.map"
   },
   "entrypoints": [
     "static/css/main.c9f98938.css",
-    "static/js/main.ff2d32f0.js"
+    "static/js/main.80344214.js"
   ]
 }
