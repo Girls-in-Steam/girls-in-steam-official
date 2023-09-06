@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/girls-in-steam-official/static/css/main.e27f591a.css",
-    "main.js": "/girls-in-steam-official/static/js/main.7da91215.js",
+    "main.css": "/girls-in-steam-official/static/css/main.c9f98938.css",
+    "main.js": "/girls-in-steam-official/static/js/main.ff2d32f0.js",
     "static/media/community.jpeg": "/girls-in-steam-official/static/media/community.bfd51f3b29c2266c42a6.jpeg",
     "static/media/access.jpeg": "/girls-in-steam-official/static/media/access.54366d6f99447dad9fc8.jpeg",
     "static/media/education.jpg": "/girls-in-steam-official/static/media/education.9201b13ab89194ffba20.jpg",
+    "static/media/map-with-pins.png": "/girls-in-steam-official/static/media/map-with-pins.7933e1b6ad4be56850e4.png",
     "static/media/jackie.png": "/girls-in-steam-official/static/media/jackie.90e4587fdfa904eeec1d.png",
     "static/media/marina.png": "/girls-in-steam-official/static/media/marina.1091e893e357a5d9ae2a.png",
     "static/media/coco.png": "/girls-in-steam-official/static/media/coco.1865de98c21ddca2cb3e.png",
@@ -19,25 +20,28 @@
     "static/media/crystal.png": "/girls-in-steam-official/static/media/crystal.b69c4cddcf7439e15fab.png",
     "static/media/donna.png": "/girls-in-steam-official/static/media/donna.b3016103a1a4c54d5c41.png",
     "static/media/doreen.png": "/girls-in-steam-official/static/media/doreen.ed2e5ce6dc8ed616f9fd.png",
+    "static/media/carousel-workshop.jpg": "/girls-in-steam-official/static/media/carousel-workshop.2df3cf91631f3fdacb73.jpg",
     "static/media/JosefinSans-VariableFont_wght.ttf": "/girls-in-steam-official/static/media/JosefinSans-VariableFont_wght.d7d14147b960fccdc60f.ttf",
     "static/media/allison.png": "/girls-in-steam-official/static/media/allison.ef76e1b7df068f97142c.png",
     "static/media/Rastano.ttf": "/girls-in-steam-official/static/media/Rastano.8f11c8416cc542cc5d51.ttf",
-    "static/media/steambbt.png": "/girls-in-steam-official/static/media/steambbt.fc992c6e447bc4ca5e49.png",
+    "static/media/carousel-panel.jpg": "/girls-in-steam-official/static/media/carousel-panel.fcec127217376e043d53.jpg",
     "static/media/gis-logo.png": "/girls-in-steam-official/static/media/gis-logo.739374b7b70588e0cf09.png",
     "static/media/julia.png": "/girls-in-steam-official/static/media/julia.271d46a767779b1641af.png",
     "static/media/haley.png": "/girls-in-steam-official/static/media/haley.f358d52ee520a3f1742d.png",
-    "static/media/map1.png": "/girls-in-steam-official/static/media/map1.99b9c69f92e190ab6804.png",
+    "static/media/booth.jpg": "/girls-in-steam-official/static/media/booth.9e2b679919b3ef500926.jpg",
+    "static/media/carousel-studio.jpg": "/girls-in-steam-official/static/media/carousel-studio.8c459d0cd5e4f9ebb9b5.jpg",
+    "static/media/thermometer.svg": "/girls-in-steam-official/static/media/thermometer.2c06262814ea9007436549280089cd7b.svg",
     "static/media/education-icon.svg": "/girls-in-steam-official/static/media/education-icon.0e77d60dfedb784f2a57a28f0563ac7a.svg",
     "index.html": "/girls-in-steam-official/index.html",
     "static/media/community-icon.svg": "/girls-in-steam-official/static/media/community-icon.21adc9f9fb79beb733e9fc46a8b27ac6.svg",
     "static/media/access-icon.svg": "/girls-in-steam-official/static/media/access-icon.c97c7c87765f8dc6709008683b605800.svg",
     "static/media/right-arrow.svg": "/girls-in-steam-official/static/media/right-arrow.95d8b94c7a09a43834b57b44f3945c08.svg",
     "static/media/left-arrow.svg": "/girls-in-steam-official/static/media/left-arrow.9bc9bb106484f7480829d67187c63aca.svg",
-    "main.e27f591a.css.map": "/girls-in-steam-official/static/css/main.e27f591a.css.map",
-    "main.7da91215.js.map": "/girls-in-steam-official/static/js/main.7da91215.js.map"
+    "main.c9f98938.css.map": "/girls-in-steam-official/static/css/main.c9f98938.css.map",
+    "main.ff2d32f0.js.map": "/girls-in-steam-official/static/js/main.ff2d32f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e27f591a.css",
-    "static/js/main.7da91215.js"
+    "static/css/main.c9f98938.css",
+    "static/js/main.ff2d32f0.js"
   ]
 }
