@@ -3,38 +3,30 @@ import { Grid, Typography, IconButton } from "@mui/material";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./../styles/Events.css";
-import chatimeevent from "./../images/chatime.png";
-import pilatesevent from "./../images/pilates.png";
-import cmdfevent from "./../images/cmdf.png";
-import workshopevent from "./../images/workshop.png";
-import ubcevent from "./../images/ubc.png";
-import contactevent from "./../images/contactevent.png";
+import { eventData } from '../data/eventData';
 import leftArrowWhite from "./../images/left-arrow-white.svg";
 import rightArrowWhite from "./../images/right-arrow-white.svg";
 
 export default function Events() {
-  const eventImages = [
-    chatimeevent,
-    pilatesevent,
-    cmdfevent,
-    workshopevent,
-    ubcevent,
-    contactevent,
-  ];
-
   const [activeIndex, setActiveIndex] = useState(0);
   const [showBackButton, setShowBackButton] = useState(false);
 
   const handleNextClick = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % eventImages.length);
+    setActiveIndex((prevIndex) =>
+      prevIndex < eventData.length  ? prevIndex + 3 : prevIndex
+    );
     setShowBackButton(true);
   };
 
   const handlePrevClick = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? 0 : prevIndex - 1
+      prevIndex === 0 ? 0 : prevIndex - 3
     );
-    setShowBackButton(activeIndex !== 1);
+    setShowBackButton(activeIndex !== 3);
+  };
+
+  const handleCardClick = (link) => {
+    window.open(link, "_blank");  
   };
 
   return (
@@ -78,23 +70,34 @@ export default function Events() {
         )}
 
         <AliceCarousel
-          items={eventImages.map((imgSrc, index) => (
-            <div key={index} className="shadow-rectangle-events">
-              <img src={imgSrc} alt={`Event ${index + 1}`} className="photo" />
+          items={eventData.map((event, index) => (
+            <div
+              key={index}
+              className="shadow-rectangle-events event-card"
+              onClick={() => handleCardClick(event.instagramLink)}
+            >
+              <img
+                src={event.imgSrc}
+                alt={`Event ${index + 1}`}
+                className="photo"
+              />
             </div>
+            
           ))}
           responsive={{
             0: { items: 1 },
             600: { items: 2 },
             900: { items: 3 },
           }}
+          animationType="fadeout" 
           animationDuration={500}
           disableDotsControls
           disableButtonsControls
           activeIndex={activeIndex}
+          
         />
 
-        <div style={{ display: "flex", flexDirection: "column" }}>
+       <div style={{ display: "flex", flexDirection: "column" }}>
           <IconButton
             style={{ color: "#FFFFFF" }}
             aria-label="Next"
@@ -113,7 +116,7 @@ export default function Events() {
           >
             NEXT
           </Typography>
-        </div>
+        </div> 
       </Grid>
     </Grid>
   );

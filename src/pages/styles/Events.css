@@ -1,7 +1,8 @@
 .events-container {
   background-image: linear-gradient(#e0cbe8, #9f93c1);
-  padding-left: 150px;
-  padding-top: 50px;
+  padding-left: 140px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .events {
@@ -25,20 +26,19 @@
 }
 
 @media (max-width: 600px) {
-  .events-container {
-    align-items: center;
-    padding-left: 20px;
-  }
-
   .events {
     flex-direction: column;
-    align-items: center;
   }
 
   .shadow-rectangle-events {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 100px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    position: static;
+    margin-top: 10px;
   }
 }
 
@@ -52,6 +52,7 @@
   z-index: 1;
 }
 
+
 .alice-carousel__prev-btn img,
 .alice-carousel__next-btn img {
   width: 50px;
@@ -63,4 +64,16 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+}
+
+.event-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  margin-right: 10px;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+  z-index: 1;
 }
