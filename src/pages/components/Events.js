@@ -9,24 +9,21 @@ import rightArrowWhite from "./../images/right-arrow-white.svg";
 
 export default function Events() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [showBackButton, setShowBackButton] = useState(false);
 
   const handleNextClick = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex < eventData.length  ? prevIndex + 3 : prevIndex
+      prevIndex < eventData.length - 3 ? prevIndex + 3 : prevIndex
     );
-    setShowBackButton(true);
   };
 
   const handlePrevClick = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? 0 : prevIndex - 3
+      prevIndex >= 3 ? prevIndex - 3 : 0
     );
-    setShowBackButton(activeIndex !== 3);
   };
 
   const handleCardClick = (link) => {
-    window.open(link, "_blank");  
+    window.open(link, "_blank");
   };
 
   return (
@@ -46,31 +43,31 @@ export default function Events() {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={12} className="events">
-        {showBackButton && (
-          <div style={{ display: "flex", flexDirection: "column" }}>
+        <div className="button-container">
+          {activeIndex > 0 && (
             <IconButton
               style={{ color: "#FFFFFF" }}
               aria-label="Previous"
               onClick={handlePrevClick}
               className="alice-carousel__prev-btn"
             >
-              <img src={rightArrowWhite} alt="Previous" />
+              <div className="button-content">
+                <img src={rightArrowWhite} alt="Previous" />
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "Josefin Sans",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  BACK
+                </Typography>
+              </div>
             </IconButton>
-            <Typography
-              variant="body1"
-              sx={{
-                fontFamily: "Josefin Sans",
-                color: "#FFFFFF",
-                textAlign: "left",
-              }}
-            >
-              BACK
-            </Typography>
-          </div>
-        )}
-
+          )}
+        </div>
         <AliceCarousel
-          items={eventData.map((event, index) => (
+          items={eventData.slice(activeIndex, activeIndex + 3).map((event, index) => (
             <div
               key={index}
               className="shadow-rectangle-events event-card"
@@ -82,41 +79,41 @@ export default function Events() {
                 className="photo"
               />
             </div>
-            
           ))}
           responsive={{
             0: { items: 1 },
             600: { items: 2 },
             900: { items: 3 },
           }}
-          animationType="fadeout" 
-          animationDuration={500}
+          // animationType="fadeout"
+          // animationDuration={500}
           disableDotsControls
           disableButtonsControls
-          activeIndex={activeIndex}
-          
+          activeIndex={0}
         />
-
-       <div style={{ display: "flex", flexDirection: "column" }}>
-          <IconButton
-            style={{ color: "#FFFFFF" }}
-            aria-label="Next"
-            onClick={handleNextClick}
-            className="alice-carousel__next-btn"
-          >
-            <img src={leftArrowWhite} alt="Next" />
-          </IconButton>
-          <Typography
-            variant="body1"
-            sx={{
-              fontFamily: "Josefin Sans",
-              color: "#FFFFFF",
-              textAlign: "left",
-            }}
-          >
-            NEXT
-          </Typography>
-        </div> 
+        <div className="button-container" style={{ marginLeft: "20px" }}>
+          {activeIndex < eventData.length - 3 && (
+            <IconButton
+              style={{ color: "#FFFFFF" }}
+              aria-label="Next"
+              onClick={handleNextClick}
+              className="alice-carousel__next-btn"
+            >
+              <div className="button-content">
+                <img src={leftArrowWhite} alt="Next" />
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "Josefin Sans",
+                    color: "#FFFFFF",
+                  }}
+                >
+                  NEXT
+                </Typography>
+              </div>
+            </IconButton>
+          )}
+        </div>
       </Grid>
     </Grid>
   );
