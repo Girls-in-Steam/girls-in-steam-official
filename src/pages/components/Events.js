@@ -7,6 +7,19 @@ import { eventData } from '../data/eventData';
 import leftArrowWhite from "./../images/left-arrow-white.svg";
 import rightArrowWhite from "./../images/right-arrow-white.svg";
 
+// Event Card component
+function EventCard({ event, onClick }) {
+  return (
+    <div
+      className="shadow-rectangle-events event-card"
+      onClick={() => onClick(event.instagramLink)}
+    >
+      <img src={event.imgSrc} alt={`Event`} className="photo" />
+    </div>
+  );
+}
+
+// Events component
 export default function Events() {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -27,8 +40,8 @@ export default function Events() {
   };
 
   return (
-    <Grid container spacing={2} className="events-container">
-      <Grid item xs={12} sm={6}>
+    <Grid container spacing={0} className="events-container">
+      <Grid item xs={12} sm={5}>
         <Typography
           variant="h4"
           gutterBottom
@@ -42,7 +55,7 @@ export default function Events() {
           EVENTS
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={12} className="events">
+      <Grid item xs={6} sm={12} className="events">
         <div className="button-container">
           {activeIndex > 0 && (
             <IconButton
@@ -68,17 +81,11 @@ export default function Events() {
         </div>
         <AliceCarousel
           items={eventData.slice(activeIndex, activeIndex + 3).map((event, index) => (
-            <div
+            <EventCard
               key={index}
-              className="shadow-rectangle-events event-card"
-              onClick={() => handleCardClick(event.instagramLink)}
-            >
-              <img
-                src={event.imgSrc}
-                alt={`Event ${index + 1}`}
-                className="photo"
-              />
-            </div>
+              event={event}
+              onClick={handleCardClick}
+            />
           ))}
           responsive={{
             0: { items: 1 },
