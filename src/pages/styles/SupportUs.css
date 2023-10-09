@@ -1,6 +1,12 @@
+#Support {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
 .SupportUsContainer {
-  padding: 20px;
   text-align: center;
+  max-width: 1024px;
 }
 
 #social-icon-box {
@@ -25,7 +31,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .SupportUsContainer {
     padding: 20px 50px;
   }
@@ -36,4 +42,4 @@
     padding-top: 50px;
     padding-left: 150px;
   }
-}
+} */

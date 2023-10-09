@@ -11,6 +11,7 @@ import rightArrow from './../images/right-arrow.svg';
 
 export default function Hero() {
     return (
+        <div className="HeroBackground">
         <div id="Hero">
             <div className="info-column">
                 <h1 className="girls-in">girls in <br /></h1>
@@ -47,6 +48,7 @@ export default function Hero() {
                         <img className="slide-image" src={panel} alt="GiS Panel" />
                     </AliceCarousel>
                 </div>
+            </div>
             </div>
         </div>
     );

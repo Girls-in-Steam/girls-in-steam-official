@@ -4,15 +4,20 @@
     url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
-.OurValuesContainer {
+#Values {
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: xx-large;
+  text-align: center;
+  display: inline-block;
+  align-content: center;
+  margin-bottom: 20px;
 }
 
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1024px;
 }
 
 .val-column-community {
