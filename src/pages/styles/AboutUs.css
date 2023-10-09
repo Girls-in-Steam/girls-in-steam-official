@@ -1,8 +1,8 @@
 #About {
-    text-align: center;
     padding: 5%;
     max-width: 1024px;
     align-self: center;
+    text-align: center;
 }
 
 .AboutUsDesc {
@@ -16,24 +16,6 @@
 .photo-wrapper {
   margin-top: 15px;
 }
-
-/* @media (min-width: 1000px) {
-  .AboutUsContainer {
-    padding: 20px 50px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .AboutUsContainer {
-    padding-top: 50px;
-    padding-left: 150px;
-  }
-
-  .shadow-rectangle {
-    margin-left: 100px;
-  }
-
-} */
 
 @font-face {
   font-family: "JosefinSans";
