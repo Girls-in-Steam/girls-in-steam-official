@@ -28,6 +28,6 @@ export const eventData = [
     },
     {
       imgSrc: contactevent,
-      instagramLink: "https://linktr.ee/girlsinsteamorg",
+      instagramLink: "mailto:info@girlsinsteam.org",
     },
   ];
