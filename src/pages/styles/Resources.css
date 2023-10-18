@@ -1,3 +1,41 @@
-.resource-title{
-    text-text: right;
+.columns-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resource-box{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 80px;
+    max-width: 300px;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.resource-column{
+    background-color: #EDE9EA;
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 60px;
+    max-width: 320px;
+    max-height: 600px;
+    width: 15%;
+    margin: 20px;
+    overflow: scroll;
+
+}
+
+.column-hastag{
+    background-color: #929FCA;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.columns-container{
+    display: flex;
+    flex-direction: row;
 }
