@@ -7,6 +7,7 @@ import "./../fonts/JosefinSans-VariableFont_wght.ttf"
 import OurValues from './components/OurValues.js';
 import TheTeam from "./components/TheTeam.js";
 import Hero from "./components/Hero.js";
+import Resources from "./components/Resources";
 import SupportUs from "./components/SupportUs.js";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <div className='Values-Team-Background'>
         <OurValues />
         <TheTeam />
+        <Resources />
         <SupportUs />
       </div>
       <Footer />
