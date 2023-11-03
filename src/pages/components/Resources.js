@@ -1,12 +1,16 @@
-import { Box, Typography, Link } from "@mui/material";
-import { RESOURCE_DATA } from './../data/ResourceData'
+import { Typography } from "@mui/material";
+import { resourceData} from '../data/resourceData'
 import "../styles/Resources.css";
 
-function ResourceBox(resourceDescrption, link) {
+function ResourceLittleBox(contentTitle, link) {
     return(
-        <div className = "resource-box">
+        <div className = "resource-box" 
+            onClick={(e) => {
+                e.preventDefault();
+                window.location.href= link;
+            }}>
             <Typography variant="body1" sx={{color: 'black'}}>
-                {resourceDescrption}
+                {contentTitle}
             </Typography>
             <Typography variant="body2" sx={{color: 'black'}}>
                 {link}
@@ -15,12 +19,12 @@ function ResourceBox(resourceDescrption, link) {
     )
 }
 
-function ResourceColumn(resourceData) {
+function ResourceTallBox(columnData) {
     let resources = [];
-    let columnTag = resourceData[0]; //gets hashtag from first element
-    for(let i=1 ; i<resourceData.length ; i++){
+    let columnTag = columnData.title; //gets hashtag from first element
+    for(let i=0 ; i<columnData.content.length ; i++){
         resources.push(
-            ResourceBox(resourceData[i][0], resourceData[i][1])
+            ResourceLittleBox(columnData.content[i].title, columnData.content[i].link)
         )
     }
 
@@ -38,17 +42,13 @@ function ResourceColumn(resourceData) {
 
 export default function Resources() {
     let resourceColumns = []
-    for(let i=0 ; i<RESOURCE_DATA.length ; i++){
-        resourceColumns.push(ResourceColumn(RESOURCE_DATA[i]))
+    for(let i=0 ; i<resourceData.length ; i++){
+        resourceColumns.push(ResourceTallBox(resourceData[i]))
     }
 
     return(
         <div className="resources-container">
-            <Box sx={{ 
-                    display: 'flex', 
-                    flexDirection: 'row-reverse',
-                    marginRight: '10px'
-                }}>
+            <div className="resource-title-container">
                 <Typography
                     variant="h4"
                     sx={{
@@ -57,7 +57,8 @@ export default function Resources() {
                 >
                     RESOURCES
                 </Typography>
-            </Box>
+            </div>
+                
             <div className = "columns-container">
                 {resourceColumns}
             </div>
