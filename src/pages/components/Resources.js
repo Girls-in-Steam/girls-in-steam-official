@@ -9,11 +9,8 @@ function ResourceLittleBox(contentTitle, link) {
                 e.preventDefault();
                 window.location.href= link;
             }}>
-            <Typography variant="body1" sx={{color: 'black'}}>
-                {contentTitle}
-            </Typography>
-            <Typography variant="body2" sx={{color: 'black'}}>
-                {link}
+            <Typography variant="body1" sx={{color: '#54547E', textDecoration: 'underline'}}>
+                {contentTitle + '→'} 
             </Typography>
         </div>
     )
@@ -30,7 +27,7 @@ function ResourceTallBox(columnData) {
 
     return(
         <div className = "resource-column">
-            <div className="column-hastag">
+            <div className="column-hashtag" style={{backgroundColor: columnData.titleColour}}>
                 <Typography variant="body1">
                     {columnTag}
                 </Typography>
@@ -47,7 +44,7 @@ export default function Resources() {
     }
 
     return(
-        <div className="resources-container">
+        <>
             <div className="resource-title-container">
                 <Typography
                     variant="h4"
@@ -62,6 +59,6 @@ export default function Resources() {
             <div className = "columns-container">
                 {resourceColumns}
             </div>
-        </div>
+        </>
     )
 }
