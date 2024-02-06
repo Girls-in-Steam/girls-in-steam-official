@@ -134,7 +134,7 @@ export const bioData = [
         position: POSITION_STRINGS.EXEC,
         location: LOCATION_STRINGS.RICHMOND,
         emojis: "🙉🎨🎧🐕👩🏻‍💻",
-        desc: "Donna is a first-year student currently studying business and computer science. She is passionate about UI/UX designing and Web Development. She hopes to reach out to girls who enjoy technology-related fields. Outside of school, she enjoys drawing, watching k-dramas and going to the gym. Her goal is to inspire more girls to pursue their tech dreams and take bold steps forward, driving change for a more equitable future.",
+        desc: "Donna is a student currently studying business and computer science. She is passionate about UI/UX designing and Web Development. She hopes to reach out to girls who enjoy technology-related fields. Outside of school, she enjoys drawing, watching k-dramas and going to the gym. Her goal is to inspire more girls to pursue their tech dreams and take bold steps forward, driving change for a more equitable future.",
         quote: "Girls deserve the opportunity to explore STEAM fields, not just for personal growth and development, but also to make meaningful contributions to society. Through my involvement in Girls in STEAM, I have found the chance to collaborate with talented, passionate girls with endless inspiration and encouragement.",
     },
     {
