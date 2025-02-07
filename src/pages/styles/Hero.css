@@ -1,112 +1,113 @@
 @font-face {
-    font-family: "Josefin Sans";
-    src: local('JosefinSans'),
-        url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src:
+    local('JosefinSans'),
+    url('./../../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
 #Hero {
-    color: #6363AB;
-    font-family: "Josefin Sans";
-    text-align: left;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    max-height: 850px;
+  color: #6363ab;
+  font-family: 'Josefin Sans';
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-height: 850px;
 }
 
 .info-column {
-    float: left;
-    width: 34%;
+  float: left;
+  width: 34%;
 }
 
 .carousel-column {
-    float: right;
-    width: 40%;
-    padding-right: 4%;
+  float: right;
+  width: 40%;
+  padding-right: 4%;
 }
 
 .girls-in {
-    font-size: 55px;
-    color: #A6A8CE;
-    line-height: 10%;
+  font-size: 55px;
+  color: #a6a8ce;
+  line-height: 10%;
 }
 
 .STEAM {
-    font-size: 100px;
-    line-height: 30px;
+  font-size: 100px;
+  line-height: 30px;
 }
 
 .description {
-    font-size: x-large;
+  font-size: x-large;
 }
 
 .slide-image {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .alice-carousel__wrapper {
-    border-radius: 15px;
-    max-height: 400px;
+  border-radius: 15px;
+  max-height: 400px;
 }
 
 .right {
-    margin-right: 100px;
-    position: absolute;
-    left: -40px;
-    top: 40%;
+  margin-right: 100px;
+  position: absolute;
+  left: -40px;
+  top: 40%;
 }
 
 .left {
-    margin-left: 100px;
-    position: absolute;
-    right: -40px;
-    top: 40%;
+  margin-left: 100px;
+  position: absolute;
+  right: -40px;
+  top: 40%;
 }
 
 @media screen and (max-width: 1100px) {
-    #Hero {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  #Hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    .girls-in {
-        font-size: 40px;
-    }
+  .girls-in {
+    font-size: 40px;
+  }
 
-    .STEAM {
-        font-size: 74px;
-    }
+  .STEAM {
+    font-size: 74px;
+  }
 
-    .description {
-        font-size: large;
-    }
+  .description {
+    font-size: large;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .girls-in {
-        font-size: 200%;
-    }
+  .girls-in {
+    font-size: 200%;
+  }
 
-    .STEAM {
-        font-size: 280%;
-    }
+  .STEAM {
+    font-size: 280%;
+  }
 
-    .info-column {
-        width: 90%;
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
+  .info-column {
+    width: 90%;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
 
-    .carousel-column {
-        float: left;
-        width: 90%;
-    }
+  .carousel-column {
+    float: left;
+    width: 90%;
+  }
 
-    .hero-carousel {
-        padding: 40px;
-    }
+  .hero-carousel {
+    padding: 40px;
+  }
 
-    .description {
-        font-weight: normal;
-    }
+  .description {
+    font-weight: normal;
+  }
 }

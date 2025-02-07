@@ -24,14 +24,14 @@ html {
 }
 
 .Hero-Background {
-  background-color: #EBE9FA;
+  background-color: #ebe9fa;
   border-top: solid;
-  border-top-color: #A6A8CE;
+  border-top-color: #a6a8ce;
   min-height: 500px;
 }
 
 .Values-Team-Background {
-  background-image: linear-gradient(#9292C9, #E0CBE8, #9F93C1);
+  background-image: linear-gradient(#9292c9, #e0cbe8, #9f93c1);
   background-size: 100vw !important;
 }
 
