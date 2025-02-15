@@ -1,19 +1,38 @@
 export const execTeamFAQData = [
   {
-    question: 'What does STEAM stand for?',
-    answer: 'STEAM stands for Science, Technology, Engineering, Art & Design, Maths'
+    question: 'How much is the event?',
+    answer: `Early Bird Tickets and GIS Members Tickets are $20, 
+              Regular Tickets are $30, 
+              Late Tickets are $35`
   },
   {
-    question: 'How do I learn more about GIS?',
-    answer: 'Follow our instagram @girlsinsteamorg'
+    question: 'Will food be provided?',
+    answer: 'Yes! Lunch will be served and there will be snacks throughout the event.'
   },
   {
-    question: 'How do I join the GIS team?',
-    answer: 'Recruitment for the executive team happens every year in January. Stay tuned!'
+    question: 'Who can attend the event?',
+    answer: ''
   },
   {
-    question: 'Who is eligible to apply to the Campus Ambassador Program?',
-    answer:
-      'All highschool students in Greater Vancouver and college students across North America are welcome to join the Campus Ambassador Program.'
+    question: 'Where can I find the schedule?',
+    answer: 'You can find it on our website here!'
+  },
+  {
+    question: 'Are tickets refundable or transferable?',
+    answer: ''
+  },
+  {
+    question: 'When and where will the conference take place?',
+    answer: `The conference will take place on Saturday, March 29 at Engineering Student Centre (ESC),
+            UBC Engineering Courtyard, 2335 Engineering Rd, Vancouver, BC V6T 1Z3, Canada`
+  },
+  {
+    question: 'How do I register for the conference?',
+    answer: 'You can register online at ___. Early registration is encouraged to secure your spot.'
+  },
+  {
+    question: 'What is included in the registration fee?',
+    answer: `The fee includes access to all sessions, keynote speeches, workshops, 
+            networking opportunities, and refreshments during the event.`
   }
 ];
