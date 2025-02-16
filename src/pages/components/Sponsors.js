@@ -15,11 +15,11 @@ export default function Sponsors() {
             <h1 className="blurb">THANK YOU SO MUCH TO OUR SPONSORS</h1>
             <div className="BoxContainer">
               {/* Replace placeholder logos with actual sponsor logos */}
+              <img src={mc} alt="Sponsor Logo" className="SponsorLogoMc" />
               <img src={Yoggu} alt="Sponsor Logo" className="SponsorLogo" />
-              <img src={smartSweet} alt="Sponsor Logo" className="SponsorLogo" />
-              <img src={mc} alt="Sponsor Logo" className="SponsorLogo" />
-              <img src={SAC} alt="Sponsor Logo" className="SponsorLogo" />
-              <img src={DangGood} alt="Sponsor Logo" className="SponsorLogo" />
+              <img src={SAC} alt="Sponsor Logo" className="SponsorLogoSAC" />
+              <img src={DangGood} alt="Sponsor Logo" className="SponsorLogoDang" />
+              <img src={smartSweet} alt="Sponsor Logo" className="SponsorLogoSmartSweet" /> 
             </div>
           </div>
         </Grid>
