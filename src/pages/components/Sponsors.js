@@ -5,6 +5,7 @@ import DangGood from '../images/DangGoodBath-removebg-preview.png';
 import smartSweet from '../images/SS-Logo-Vector_White-230131.png';
 import mc from '../images/McElhanney - Logo 08-21-2023.png';
 import SAC from '../images/SAC_FINAL-wordmark-colour.png';
+import SponsorPkg from './SponsorPkg';
 
 export default function Sponsors() {
   return (
@@ -21,6 +22,7 @@ export default function Sponsors() {
               <img src={SAC} alt="Sponsor Logo" className="SponsorLogo" />
               <img src={DangGood} alt="Sponsor Logo" className="SponsorLogo" />
             </div>
+            <SponsorPkg></SponsorPkg>
           </div>
         </Grid>
       </Grid>
