@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.53debcaf.css",
-    "main.js": "/static/js/main.5791ea38.js",
+    "main.css": "/static/css/main.7f10dc55.css",
+    "main.js": "/static/js/main.581872a2.js",
     "static/media/vanessa.jpg": "/static/media/vanessa.028554a320e5603dd0f1.jpg",
     "static/media/community.jpeg": "/static/media/community.bfd51f3b29c2266c42a6.jpeg",
     "static/media/rachelng.jpeg": "/static/media/rachelng.6c2c3580e6880b8431a6.jpeg",
@@ -12,6 +12,7 @@
     "static/media/education.jpg": "/static/media/education.9201b13ab89194ffba20.jpg",
     "static/media/jelenna.jpeg": "/static/media/jelenna.6f4c57dc5df573faa125.jpeg",
     "static/media/deepika.jpg": "/static/media/deepika.7bd85704b9738888243b.jpg",
+    "static/media/bhavneet.png": "/static/media/bhavneet.fbb0eb72f73a9f289815.png",
     "static/media/drishtitanwani.jpeg": "/static/media/drishtitanwani.c24a2afa2ea9717d7b11.jpeg",
     "static/media/allisonduong.jpeg": "/static/media/allisonduong.fde475d031369e03b8a6.jpeg",
     "static/media/emily.png": "/static/media/emily.6dc0dfa667783c2af4e1.png",
@@ -23,11 +24,9 @@
     "static/media/carmen.jpeg": "/static/media/carmen.a680ef8ab6d53dc152b4.jpeg",
     "static/media/arnima.jpg": "/static/media/arnima.77767e0b3f69f5759da5.jpg",
     "static/media/lily.jpg": "/static/media/lily.0de787d24ecc11699858.jpg",
-    "static/media/bhavneet.jpg": "/static/media/bhavneet.a8b703c2181399614278.jpg",
     "static/media/sukhman.jpg": "/static/media/sukhman.4145b0c6972a414a2ceb.jpg",
     "static/media/jaskiran.png": "/static/media/jaskiran.1674d9e7c19f3d0fcc30.png",
     "static/media/livia.JPG": "/static/media/livia.389cc33c9da4b80dc80c.JPG",
-    "static/media/marina.png": "/static/media/marina.1091e893e357a5d9ae2a.png",
     "static/media/ariel.png": "/static/media/ariel.f4e0743928f3ec901b33.png",
     "static/media/nika.png": "/static/media/nika.961c6724a9a161dcb496.png",
     "static/media/rachelwang.jpg": "/static/media/rachelwang.18f9902503045647d784.jpg",
@@ -50,11 +49,11 @@
     "static/media/access-icon.svg": "/static/media/access-icon.5faf49c2187d1a904eb30483aad387a6.svg",
     "static/media/right-arrow.svg": "/static/media/right-arrow.930e2bc1427ef08efaf0b73adbf40755.svg",
     "static/media/left-arrow.svg": "/static/media/left-arrow.d654d5c01ce6a81e5b4bf882d31354be.svg",
-    "main.53debcaf.css.map": "/static/css/main.53debcaf.css.map",
-    "main.5791ea38.js.map": "/static/js/main.5791ea38.js.map"
+    "main.7f10dc55.css.map": "/static/css/main.7f10dc55.css.map",
+    "main.581872a2.js.map": "/static/js/main.581872a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.53debcaf.css",
-    "static/js/main.5791ea38.js"
+    "static/css/main.7f10dc55.css",
+    "static/js/main.581872a2.js"
   ]
 }
