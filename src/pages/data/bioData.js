@@ -2,7 +2,6 @@ import allison from './../images/allison.png';
 import ariel from './../images/ariel.png';
 import rachelwang from './../images/rachelwang.jpg';
 import deepika from './../images/deepika.jpg';
-import marina from './../images/marina.png';
 import livia from './../images/livia.JPG';
 import emily from './../images/emily.png';
 import elise from './../images/elise.jpg';
@@ -23,7 +22,7 @@ import jaskiran from './../images/jaskiran.png';
 import christabel from './../images/christabel.jpg';
 import nika from './../images/nika.png';
 import allisonduong from './../images/allisonduong.jpeg';
-import bhavneet from './../images/bhavneet.jpg';
+import bhavneet from './../images/bhavneet.png';
 import dhiya from './../images/dhiya.jpeg';
 import nysa from './../images/nysa.png';
 import vanessa from './../images/vanessa.jpg';
@@ -92,19 +91,6 @@ export const bioData = [
     desc: 'Rachel is a UBC student studying Business and Computer Science with a strong passion for data and its potential to drive meaningful change. At ICBC, she works within the Operational Resilience team, applying her analytical skills to support strategic initiatives and improve organizational processes. Having experienced limited exposure to data and technology fields during her own early education, Rachel is committed to helping students discover the vast opportunities available in these areas.',
     quote:
       'STEAM matters to me because it blends creativity and innovation to solve meaningful problems. Growing up with limited exposure to these fields, I realized how vital early opportunities are in sparking curiosity and shaping futures. By pursuing technology and data, I’ve seen firsthand how STEAM can drive change. I’m passionate about bridging gaps in access and inspiring students, especially those underrepresented, to explore the possibilities within STEAM and discover their potential.'
-  },
-  {
-    name: 'Marina Wang',
-    src: marina,
-    role: 'Web Developer',
-    email: 'ubc.vpt@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    position: POSITION_STRINGS.EXEC,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '🎹🎨🏖🥏🍜',
-    desc: 'Marina is a second-year Business and Computer Science student at the University of British Columbia. As a woman in STEAM, she is passionate about painting, music, and programming. She aspires to apply her skills in the tech industry to tackle real-world challenges.',
-    quote:
-      'STEAM is the driving force behind the progression of world. It resonates with me because it reflects who I am and what I strive to use to improve the lives of others.'
   },
   {
     name: 'Deepika Chandrashekar',

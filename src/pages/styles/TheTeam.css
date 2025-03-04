@@ -28,6 +28,13 @@
   animation-play-state: paused;
 }
 
+.dialog-image {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  border-radius: 50%; /* Make the dialog image circular */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -47,9 +54,11 @@
 .imgs-slide img {
   height: 80px;
   width: 80px;
+  max-width: 80px;
   margin: 0 24px;
   transition: transform 0.5s;
   border-radius: 20px;
+  object-fit: cover; /* Ensure the image covers the area without stretching */
 }
 
 .imgs-slide img:hover {
@@ -59,5 +68,14 @@
 @media only screen and (max-width: 700px) {
   .the-team {
     font-size: large;
+  }
+  .imgs-slide img {
+    height: 60px; /* Smaller images for mobile */
+    width: 60px; /* Smaller images for mobile */
+  }
+
+  .dialog-image {
+    width: 150px; /* Smaller dialog image for mobile */
+    height: 150px; /* Smaller dialog image for mobile */
   }
 }
